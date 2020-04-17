@@ -20,7 +20,7 @@ Before=getty.target
 IgnoreOnIsolate=yes
 
 [Service]
-ExecStart=-/sbin/agetty -h -L 19200 %I vt220
+ExecStart=-/sbin/agetty -8 -h -L 19200 %I vt220
 Type=idle
 Restart=always
 UtmpIdentifier=%I
